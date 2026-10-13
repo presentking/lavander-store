@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- Live Age Counter ---
-    const birthDate = new Date('2006-08-14T00:00:00');
+    const birthDate = new Date('2024-02-14T20:00:00');
     const countdownElement = document.getElementById('countdown');
 
     function updateAge() {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (months < 0) { months += 12; years--; }
 
-        countdownElement.innerHTML = `${years}y ${months}m ${days}d <br> ${hours}h ${minutes}m ${seconds}s`;
+        countdownElement.innerHTML = `${years}г ${months}м ${days}д <br> ${hours}ч ${minutes}м ${seconds}с`;
     }
     setInterval(updateAge, 1000);
     updateAge();
